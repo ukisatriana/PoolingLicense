@@ -19,7 +19,7 @@ const dashboardPage = {
   id: 'dashboardPage',
   title: <FormattedMessage id="dashboard" />,
   type: 'group',
-  url: '/dashboard/default',
+  url: '/dashboard/dash-pool',
   icon: icons.dashboardPage,
   breadcrumbs: false
 };

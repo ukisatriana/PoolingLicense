@@ -9,6 +9,16 @@
   "more-items": "More Items",
   "pages": "Pages",
   "dashboard": "Dashboard",
+  "item-menu": "Menu",
+  "license-list": "License",
+  "user-list": "User",
+  "setting-list": "Setting",
+  "category-list": "Category License",
+  "company-list": "Company",
+  "supplier-list": "Supplier",
+  "department-list": "Department",
+  "location-list": "Location",
+  "manufacture-list": "Manufacture",
   "sample-page": "Sample Page",
   "under-construction": "Under Construction"
 }

@@ -8,7 +8,7 @@ import SimpleLayout from 'layout/Simple';
 import { SimpleLayoutType } from 'config';
 
 // Dashboard
-const DashboardPage = Loadable(lazy(() => import('pages/dashboard/default')));
+const DashboardPage = Loadable(lazy(() => import('pages/dashboard/dash-pool')));
 
 // Maintenance
 const MaintenanceError = Loadable(lazy(() => import('pages/maintenance/error/404')));
@@ -50,7 +50,7 @@ const MainRoutes = {
       element: <DashboardLayout />,
       children: [
         {
-          path: 'dashboard/default', //name file route
+          path: 'dashboard/dash-pool', //name file route
           element: <DashboardPage />
         }
       ]
