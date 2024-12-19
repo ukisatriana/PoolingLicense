@@ -26,7 +26,7 @@ const menu = {
       id: 'license-data',
       title: <FormattedMessage id="license-list" />,
       type: 'item',
-      url: '/menu/license',
+      url: '/apps/license',
       icon: icons.license,
       target: false
     },
@@ -34,7 +34,7 @@ const menu = {
       id: 'user-data',
       title: <FormattedMessage id="user-list" />,
       type: 'item',
-      url: '/menu/user',
+      url: '/apps/user/list',
       icon: icons.user,
       target: false
     },
@@ -48,42 +48,42 @@ const menu = {
           id: 'category-setting',
           title: <FormattedMessage id="category-list" />,
           type: 'item',
-          url: '/menu/category',
+          url: '/apps/category',
           target: false
         },
         {
           id: 'company-setting',
           title: <FormattedMessage id="company-list" />,
           type: 'item',
-          url: '/menu/company',
+          url: '/apps/company',
           target: false
         },
         {
           id: 'manufacture-setting',
           title: <FormattedMessage id="manufacture-list" />,
           type: 'item',
-          url: '/menu/manufacture',
+          url: '/apps/manufacture',
           target: false
         },
         {
           id: 'supplier-setting',
           title: <FormattedMessage id="supplier-list" />,
           type: 'item',
-          url: '/menu/supplier',
+          url: '/apps/supplier/supplier-list',
           target: false
         },
         {
           id: 'departement-setting',
           title: <FormattedMessage id="department-list" />,
           type: 'item',
-          url: '/menu/departement',
+          url: '/apps/departement/departement-list',
           target: false
         },
         {
           id: 'location-setting',
           title: <FormattedMessage id="location-list" />,
           type: 'item',
-          url: '/menu/location',
+          url: '/apps/location/location-list',
           target: false
         }
       ]

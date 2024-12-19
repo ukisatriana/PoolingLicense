@@ -10,11 +10,19 @@ import { SimpleLayoutType } from 'config';
 // Dashboard
 const DashboardPage = Loadable(lazy(() => import('pages/dashboard/dash-pool')));
 
+// Apps Page
+const UserPage = Loadable(lazy(() => import('pages/apps/user/list')));
+const LocationListPage = Loadable(lazy(() => import('pages/apps/location/location-list')));
+const DepartementListPage = Loadable(lazy(() => import('pages/apps/departement/departement-list')));
+const SupplierListPage = Loadable(lazy(() => import('pages/apps/supplier/supplier-list')));
+
 // Maintenance
 const MaintenanceError = Loadable(lazy(() => import('pages/maintenance/error/404')));
 const MaintenanceError500 = Loadable(lazy(() => import('pages/maintenance/error/500')));
 const MaintenanceUnderConstruction = Loadable(lazy(() => import('pages/maintenance/under-construction/under-construction')));
 const MaintenanceComingSoon = Loadable(lazy(() => import('pages/maintenance/coming-soon/coming-soon')));
+
+const AppCustomerList = Loadable(lazy(() => import('pages/apps/customer/list')));
 
 const AppContactUS = Loadable(lazy(() => import('pages/contact-us')));
 // render - sample page
@@ -56,6 +64,21 @@ const MainRoutes = {
       ]
     },
     {
+      path: '/',
+      element: <DashboardLayout />, // Add DashboardLayout wrapper
+      children: [
+        {
+          path: 'apps/customer',
+          children: [
+            {
+              path: 'customer-list', // Change to match menu URL
+              element: <AppCustomerList />
+            }
+          ]
+        }
+      ]
+    },
+    {
       path: '/maintenance',
       element: <PagesLayout />,
       children: [
@@ -74,6 +97,28 @@ const MainRoutes = {
         {
           path: 'coming-soon',
           element: <MaintenanceComingSoon />
+        }
+      ]
+    },
+    {
+      path: '/apps',
+      element: <DashboardLayout />,
+      children: [
+        {
+          path: 'user/list',
+          element: <UserPage />
+        },
+        {
+          path: 'location/location-list',
+          element: <LocationListPage />
+        },
+        {
+          path: 'departement/departement-list',
+          element: <DepartementListPage />
+        },
+        {
+          path: 'supplier/supplier-list',
+          element: <SupplierListPage />
         }
       ]
     },
